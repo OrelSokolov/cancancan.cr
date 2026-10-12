@@ -1,0 +1,45 @@
+---
+articles:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('articles_id_seq'::regclass)
+  - name: title
+    type: varchar
+    nullable: 'YES'
+    default:
+  - name: published
+    type: bool
+    nullable: 'NO'
+    default: 'false'
+  - name: priority
+    type: int8
+    nullable: 'NO'
+    default: '0'
+  - name: user_id
+    type: int8
+    nullable: 'YES'
+    default:
+  - name: created_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+  - name: updated_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+comments:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('comments_id_seq'::regclass)
+  - name: article_id
+    type: int8
+    nullable: 'YES'
+    default:
+  - name: body
+    type: varchar
+    nullable: 'YES'
+    default:

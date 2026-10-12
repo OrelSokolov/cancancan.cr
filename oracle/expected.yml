@@ -1,0 +1,133 @@
+alias_default_read	[:index, :show]
+alias_default_create	[:new]
+alias_default_update	[:edit]
+alias_custom	[:update, :destroy]
+alias_expands	[true, true, false]
+alias_reverse_not_matched	false
+basic_read_all	true
+basic_read_instance	true
+basic_cannot_write	false
+basic_cannotq	true
+manage_matches_all_actions	[true, true, true, true, true]
+manage_instance	true
+manage_other_subject	false
+array_actions_subjects	[[true, true], [true, true], [false, false]]
+symbol_subject	true
+symbol_subject_other	false
+cannot_overrides	[false, true]
+cannot_with_conditions	true
+cannot_with_conditions_blocked	false
+last_rule_wins	true
+cond_match	true
+cond_no_match	false
+cond_class_ignores	true
+cond_range_ok	true
+cond_range_out	false
+cond_array_ok	true
+cond_array_out	false
+cond_nested_match	true
+cond_nested_no_match	false
+cond_nested_empty_has_nil	false
+cond_all_must_match	true
+cond_one_missing	false
+block_match	true
+block_no_match	false
+block_class_true	true
+cannot_block_allowed	true
+cannot_block_blocked	false
+catch_all_class	true
+catch_all_instance	true
+catch_all_other	false
+attribute_blocked	false
+attribute_allowed	true
+attributes_for	{published: true, priority: 5, user_id: 7}
+authorize_ok	Article
+authorize_raises	CanCan::AccessDenied:update:Article
+authorize_custom_message	no way
+merge_before	false
+merge_after	true
+permissions	{can: {read: {"Article" => []}, index: {"Article" => []}, show: {"Article" => []}}, cannot: {destroy: {"Article" => []}}}
+accessible_by_titles	["pub a", "pub c"]
+accessible_by_sql	true
+accessible_by_block_raises	CanCan::Error
+raw_sql_can_raises	CanCan::Error
+raw_sql_accessible_by	["priv b", "pub c"]
+has_block	true
+has_raw_sql	false
+clear_aliases	true
+cond_belongs_to_match	true
+cond_belongs_to_no_match	false
+cond_no_children	true
+cond_has_children	false
+block_attribute_match	true
+block_attribute_no_match	false
+any_subject_match	true
+any_subject_one	true
+any_subject_none	false
+any_subject_conditions	true
+any_subject_conditions_none	false
+nested_subject_match	true
+nested_subject_no_match	false
+nested_subject_fk_match	true
+nested_subject_fk_no_match	false
+nested_subject_fk_arr_match	true
+nested_subject_fk_arr_no_match	false
+permitted_attributes	[:title]
+permitted_attributes_all	[:created_at, :id, :priority, :published, :title, :updated_at, :user_id]
+unauthorized_message_nil	nil
+authorize_default_message	You are not authorized to access this page.
+alias_to_real_action_raises	[:index, :show, :foo]
+rule_inspect	#<CanCan::Rulecan [:read], [Article(id: integer, title: string, published: boolean, priority: integer, user_id: integer, created_at: datetime, updated_at: datetime)], [:title], {}>
+rule_inspect_conditions	#<CanCan::Rulecan [:read], [Article(id: integer, title: string, published: boolean, priority: integer, user_id: integer, created_at: datetime, updated_at: datetime)], [], {published: true}>
+acc_or_titles	["pub a", "pub c"]
+acc_cannot_titles	["pub a"]
+acc_blank_can_titles	["priv b", "pub a", "pub c", "solo d"]
+acc_only_cannot_titles	[]
+acc_in_titles	["pub a", "pub c"]
+acc_between_titles	["priv b", "pub a"]
+acc_between_excl_titles	["priv b", "pub a"]
+acc_exists_titles	["pub a"]
+acc_no_children_titles	["solo d"]
+acc_belongs_to_exists	["hi", "hi there"]
+acc_deep_nested	["hi"]
+acc_raw_combined_titles	["pub c"]
+acc_dup_conditions_titles	["pub a"]
+acc_catch_all_collapse_titles	[]
+can_catch_all_no_collapse	false
+scope_can_match	raise:CanCan::Error
+scope_can_no_match	raise:CanCan::Error
+scope_accessible_by_titles	["pub a", "pub c"]
+scope_blank_all	raise:CanCan::Error
+ctrl_load_show	pub a
+ctrl_load_edit	priv b
+ctrl_load_index_titles	["priv b", "pub a", "pub c", "solo d"]
+ctrl_load_index_conditions_titles	["pub a", "pub c"]
+ctrl_load_index_block_rule_nil_collection	false
+ctrl_load_new_initial_attributes	[nil, true, 5]
+ctrl_load_create_params	["from params", true, 9]
+ctrl_load_create_sanitized	["ok", 0]
+ctrl_load_ivar_preset_not_overwritten	pub c
+ctrl_load_find_by	true
+ctrl_load_id_param	priv b
+ctrl_load_class_option	hi
+ctrl_load_instance_name	pub a
+ctrl_load_collection_action	0
+ctrl_load_new_action_option	true
+ctrl_load_namespaced_controller	pub a
+ctrl_load_through_parent	hi
+ctrl_load_through_parent_wrong_child	raise:ActiveRecord::RecordNotFound
+ctrl_load_through_create	["nested", 3]
+ctrl_load_through_shallow	hi
+ctrl_load_through_missing_parent_raises	raise:CanCan::AccessDenied
+ctrl_load_singleton	hi
+ctrl_authorize_show	pub a
+ctrl_authorize_denied	raise:CanCan::AccessDenied
+ctrl_authorize_index_class	4
+ctrl_authorize_parent_nested	no_raise
+ctrl_authorize_parent_nested_denied	raise:CanCan::AccessDenied
+ctrl_parent_authorization_action	no_raise
+ctrl_skip_load_only	false
+ctrl_skip_load_other_action_loads	pub a
+ctrl_skip_authorize	pub a
+ctrl_additions_can_helper	[true, false]
+ctrl_additions_authorized_flag	denied:CanCan::AccessDenied

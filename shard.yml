@@ -1,0 +1,9 @@
+---
+name: cancancan_cr
+version: 0.1.0
+crystal: ">= 1.21.0"
+dependencies:
+  active_record_cr:
+    path: ../../rails.cr/active_record.cr
+  action_pack_cr:
+    path: ../../rails.cr/action_pack.cr
