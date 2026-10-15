@@ -4,6 +4,8 @@ version: 0.1.0
 crystal: ">= 1.21.0"
 dependencies:
   active_record_cr:
-    path: ../../rails.cr/active_record.cr
+    github: OrelSokolov/active_record.cr
+    version: ~> 0.1.0
   action_pack_cr:
-    path: ../../rails.cr/action_pack.cr
+    github: OrelSokolov/action_pack.cr
+    version: ~> 0.1.0
